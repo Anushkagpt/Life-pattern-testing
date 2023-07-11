@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Life Pattern Testing App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Life Pattern Testing App</h1>
+    
+
+    <form id="lifePatternForm">
+      <h2>Personal Information</h2>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select>
+      
+      <label for="mobile">Mobile Number with Country Code:</label>
+      <input type="text" id="mobile" name="mobile" required>
+      
+      <h2>Life Pattern Testing</h2>
+      <p><em>Please answer the following questions:</em></p>
+      <label for="religionBeliever">1. Are you a religion believer?</label>
+      <select id="religionBeliever" name="religionBeliever" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select><br>
+
+      <label for="godsPrayer">2. Do you believe in God’s prayer?</label>
+      <select id="godsPrayer" name="godsPrayer" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select>
+      
+      <label for="visitReligiousPlaces">3. Do you like to visit religious places in free time?</label>
+      <select id="visitReligiousPlaces" name="visitReligiousPlaces" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select>
+      
+      <label for="prayAmount">4. How much do you pray/puja/namaz, etc?</label>
+      <select id="prayAmount" name="prayAmount" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select>
+      
+      <label for="exercise">5. Do you exercise/yoga in the morning/evening?</label>
+      <select id="exercise" name="exercise" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select>
+      
+      <label for="workTasks">6. I cannot focus on my work tasks.</label>
+      <select id="workTasks" name="workTasks" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select>
+      
+      <label for="positiveThinker">7. Mostly, you are a positive thinker.</label>
+      <select id="positiveThinker" name="positiveThinker" required>
+        <option value="">Choose an option</option>
+        <option value="0">Not at all</option>
+        <option value="30">Sometimes</option>
+        <option value="60">More than normal</option>
+        <option value="100">Yes, 100%</option>
+      </select>
+      <label for="new-friends">8. Always try to make new friends</label>
+<select id="new-friends" name="new-friends">
+    <option value="">Choose an option</option>
+  <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="eye-contact">9. Can maintain eye contact while talking to people</label>
+<select id="eye-contact" name="eye-contact">
+    <option value="">Choose an option</option>
+  <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="neat-clean">10. I keep myself neat and clean</label>
+<select id="neat-clean" name="neat-clean">
+    <option value="">Choose an option</option>
+  <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="positive-future">11. I am excited and keep thinking about my positive future</label>
+<select id="positive-future" name="positive-future">
+    <option value="">Choose an option</option>
+      <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="positive-optimist">12. I am a positive optimist</label>
+<select id="positive-optimist" name="positive-optimist">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="multiple-relationships">13. I will be happy in more than one relationship if possible ever</label>
+<select id="multiple-relationships" name="multiple-relationships">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="show-real-self">14. I want to show people who I really am</label>
+<select id="show-real-self" name="show-real-self">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="appear-smarter">15. I feel I appear smarter than others</label>
+<select id="appear-smarter" name="appear-smarter">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="sharper-mind">16. My mind is sharper than others</label>
+<select id="sharper-mind" name="sharper-mind">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="name-fame">17. I want to gain name and fame as soon as possible</label>
+<select id="name-fame" name="name-fame">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="unexpected-magic">18. I am waiting for an unexpected magic to happen in my life</label>
+<select id="unexpected-magic" name="unexpected-magic">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="satisfied-life">19. I am proudly satisfied for whatever I have in my life</label>
+<select id="satisfied-life" name="satisfied-life">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="quiet-place">20. I take time to think about myself in a quiet place and I love doing it</label>
+<select id="quiet-place" name="quiet-place">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="work-hard">21. I work hard, I just need a right mentor/life coach to guide me in the right way</label>
+<select id="work-hard" name="work-hard">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="learn-anything">22. I can learn anything which has importance in my life</label>
+<select id="learn-anything" name="learn-anything">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="treat-important">23. I treat those who are important to me as kings and they matter a lot to me</label>
+<select id="treat-important" name="treat-important">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="productive-work">24. I am so productive at my work</label>
+<select id="productive-work" name="productive-work">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="extreme-happiness">25. Sometimes I experience extreme happiness</label>
+<select id="extreme-happiness" name="extreme-happiness">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="great-planner">26. I am a great planner, I plan before taking any action</label>
+<select id="great-planner" name="great-planner">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="childish-inside">27. I am still childish inside</label>
+<select id="childish-inside" name="childish-inside">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="enjoy-life">28. Overall, I enjoy my life</label>
+<select id="enjoy-life" name="enjoy-life">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="early-wake-up">29. I wake up before 8 am or even too early</label>
+<select id="early-wake-up" name="early-wake-up">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="sexual-desires">30. Feelings of sexual desires in me</label>
+<select id="sexual-desires" name="sexual-desires">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="show-off-social-media">31. I love, like, and enjoy showing off about me on social media</label>
+<select id="show-off-social-media" name="show-off-social-media">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="skip-tasks">32. I skip tasks that are not useful at present</label>
+<select id="skip-tasks" name="skip-tasks">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="good-status">33. I have a good status among people who know me</label>
+<select id="good-status" name="good-status">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="easy-sleep">34. I can sleep easily without issues, even in crucial/bad times</label>
+<select id="easy-sleep" name="easy-sleep">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+<label for="unique-motivation">35. There is something special in me which makes me unique and gives me self-motivation about whatever/whoever I am</label>
+<select id="unique-motivation" name="unique-motivation">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="sleeping-issues">36. I have sleeping issues</label>
+<select id="sleeping-issues" name="sleeping-issues">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="creative">37. I am so creative</label>
+<select id="creative" name="creative">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="diary-entry">38. I used to write a diary entry</label>
+<select id="diary-entry" name="diary-entry">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="extreme-patience">39. I have an extreme level of patience</label>
+<select id="extreme-patience" name="extreme-patience">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="night-owl">40. I am a night owl</label>
+<select id="night-owl" name="night-owl">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="over-thinker">41. I am an overthinker</label>
+<select id="over-thinker" name="over-thinker">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="negative-thinking">42. I cannot stop my negative thinking/thoughts</label>
+<select id="negative-thinking" name="negative-thinking">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="non-vegetarian">43. I like non-vegetarian food</label>
+<select id="non-vegetarian" name="non-vegetarian">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+
+<label for="fear-future">44. I fear about my future life</label>
+<select id="fear-future" name="fear-future">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+  
+<label for="dull-personality">45. I feel my personality, face, hairstyle is dull in front of others</label>
+<select id="dull-personality" name="dull-personality">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+  
+<label for="make-fun">46. In my absence, people make fun of me</label>
+<select id="make-fun" name="make-fun">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+  
+<label for="prayer-solve-problems">47. Only God's prayer can solve my problems</label>
+<select id="prayer-solve-problems" name="prayer-solve-problems">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100% - Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+  
+<label for="enjoy-being-alone">48. I love and like to be alone</label>
+<select id="enjoy-being-alone" name="enjoy-being-alone">
+    <option value="">Choose an option</option>
+    <option value="0">0% - Not at all</option>
+  <option value="30">30% - Sometimes</option>
+  <option value="60">60% - More than normal</option>
+  <option value="100">100%- Yes, 100%</option>
+  <option value="other">Other:</option>
+</select>
+    <label for="depend-on-parents">49. I still depend on my parents for everything</label>
+    <select id="depend-on-parents" name="depend-on-parents">
+        <option value="">Choose an option</option>
+          <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="health-disorder">50. I feel I have a serious mental/physical/health disorder in me</label>
+    <select id="health-disorder" name="health-disorder">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="challenges-and-problems">51. My life is full of big challenges and problems</label>
+    <select id="challenges-and-problems" name="challenges-and-problems">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="extreme-negativity">52. Sometimes I experience extreme negativity</label>
+    <select id="extreme-negativity" name="extreme-negativity">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="easily-influenced">53. Anyone can wash my brain or influence me very easily</label>
+    <select id="easily-influenced" name="easily-influenced">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="live-in-present">54. I enjoy and live in today, in the present time, I don't care for tomorrow</label>
+    <select id="live-in-present" name="live-in-present">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="emotional">55. I am so emotional</label>
+    <select id="emotional" name="emotional">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="alcoholic">56. I am an alcoholic</label>
+    <select id="alcoholic" name="alcoholic">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="anger">57. Situations can make me angry</label>
+    <select id="anger" name="anger">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="skip-important-tasks">58. I skip my important tasks and complete them on an extreme urgent requirement</label>
+    <select id="skip-important-tasks" name="skip-important-tasks">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="substance-addiction">59. I am addicted to some drug/substance; I am crossing my limit now</label>
+    <select id="substance-addiction" name="substance-addiction">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="wasting-time-gadgets">60. I cannot stop myself from wasting my time on electronic gadgets</label>
+    <select id="wasting-time-gadgets" name="wasting-time-gadgets">
+        <option value="">Choose an option</option>
+        <option value="0">0% - Not at all</option>
+      <option value="30">30% - Sometimes</option>
+      <option value="60">60% - More than normal</option>
+      <option value="100">100% - Yes, 100%</option>
+      <option value="other">Other:</option>
+    </select>
+    
+    <label for="health-budget">61. Your average budget for health, fitness, education & green lifestyle solutions</label>
+    <input type="text" id="health-budget" name="health-budget">
+    
+    <label for="personality-report-language">62. Receive personality report in Hindi or English</label>
+<select id="personality-report-language" name="personality-report-language">
+    <option value="">Choose an option</option>
+    <option value="english">Receive Personality Report in English</option>
+  <option value="hindi">Receive personality report in Hindi</option>
+  <option value="both">Receive personality report in both English and Hindi</option>
+  <option value="other">Other:</option>
+</select>
+
+
+<label for="health-budget"> Referred by </label>
+<input type="text" id="health-budget" name="health-budget">
+
+<label for="health-budget">Email-id</label>
+<input type="text" id="health-budget" name="health-budget">
+
+<label for="health-budget">About us</label>
+<input type="text" id="health-budget" name="health-budget">
+
+
+<!-- Add these questions to your existing HTML form -->
+
+      
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>

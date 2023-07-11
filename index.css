@@ -1,0 +1,65 @@
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #CCEEBC;
+    border: 1px solid #8fa9a8;
+    border-radius: 5px;
+    box-shadow: 5px 10px #FAF0D7 #FFD9C0 #8CC0DE #CCEEBC;
+  }
+  
+  h1, h2 {
+    color: #050600;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: #96a143;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #064e35;
+  }
+  select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  select option:first-child {
+    color: #888;
+  }
+  
+  select option {
+    color: #333;
+  }
+  /* Reset default margin and padding for all elements */
